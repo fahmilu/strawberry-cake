@@ -1,0 +1,49 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    line-height: 36px;
+    color: #fff;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.container .heading {
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+}
+.container h1 {
+    font-family: 'Gabarito', cursive;
+    font-size: 80px;
+    text-align: center;
+    line-height: 120px;
+    color: #FF8080;
+    margin-top: 0;
+}
+
+.text {
+    padding-top: 20vh;
+    color: #d43834;
+    max-width: 50%;
+    margin: 0 0 0 auto;
+}
+
+.text p {
+    margin-bottom: 56px;
+}
