@@ -30,7 +30,7 @@ camera.position.set(0, -.5, 8);
 
 const loader = new GLTFLoader();
 let model;
-loader.load('model/cake_roll.glb', function (gltf) {
+loader.load('/model/cake_roll.glb', function (gltf) {
 
     model = gltf.scene;
     model.position.set(0, -1.5, 0);
@@ -159,15 +159,15 @@ const animate = () => {
     target.x = (1 - mouse.x) * 0.0002;
     target.y = (1 - mouse.y) * 0.0002;
 
-    camera.rotation.x += 0.005 * (target.y - camera.rotation.x);
-    camera.rotation.y += 0.005 * (target.x - camera.rotation.y);
+    camera.rotation.x = 0.05 * (target.y - camera.rotation.x);
+    camera.rotation.y = 0.05 * (target.x - camera.rotation.y);
 
-    // model.rotation.x += 0.02 * (target.y - model.rotation.x);
-    // model.rotation.y += 0.05 * (target.x - model.rotation.y);
+    // model.position.x = 0.02 * (target.y - model.position.x);
+    // model.position.y = 0.05 * (target.x - model.position.y);
 
     // stars.forEach(star => {
-    //     star.rotation.x += 0.05 5 * (target.y - star.rotation.x);
-    //     star.rotation.y += 0.005 * (target.x - star.rotation.y);
+    //     star.rotation.x = 0. * (target.y - star.rotation.x);
+    //     star.rotation.y = 0.005 * (target.x - star.rotation.y);
     // });
 
     renderer.render(scene, camera);
