@@ -30,7 +30,7 @@ camera.position.set(0, -.5, 8);
 
 const loader = new GLTFLoader();
 let model;
-loader.load('./model/cake_roll.glb', function (gltf) {
+loader.load('/cake_roll.glb', function (gltf) {
 
     model = gltf.scene;
     model.position.set(0, -1.5, 0);
